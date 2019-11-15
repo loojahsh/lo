@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		practise
+	</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+	<p id ="para">+</p>
+	<img  id="img" height="50px" src="l.jpg" style="display:none;" >
+	<p id ="para1">+</p>
+	<img  id="img1" height="50px" src="l.jpg" style="display:none;" >
+	<p id ="para2">+</p>
+	<img  id="img2" height="50px" src="l.jpg" style="display:none;" >
+	
+
+
+</body>
+<!-- <script type="text/javascript">
+	function add(){
+		c= a+b;
+		document.getElementById('print').innerHTML=c;
+	}		
+	var a=document.getElementById('num').value*1;
+	var b=document.getElementById('num1').value*1;
+
+
+</script> -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script>
+	$("#para").click(function()
+	{
+		var a=$("#para").text()// nepal
+		if(a=="+")
+			{
+
+				$("#para").text("-")
+				$("#img").toggle();
+				$("#img1").hide()
+				$("#img2").hide()
+				$("#para1").text("+")
+					$("#para2").text("+")
+			
+			}
+				else
+				{
+					$("#para").text("+")	
+					$("#img").toggle();
+					$("#img").hide()
+					$("#img1").hide()
+					$("#img2").hide()
+					
+
+
+
+
+				}
+
+	}
+	)
+	$("#para1").click(function()
+	{
+		var b=$("#para1").text()// nepal
+		if(b=="+")
+			{
+
+				$("#para1").text("-")
+				$("#img1").toggle();
+				$("#img").hide()
+				$("#img2").hide()
+				$("#para").text("+")
+				$("#para2").text("+")
+
+			
+
+			
+			}
+				else
+				{
+					$("#para1").text("+")	
+					$("#img1").toggle();
+					$("#img").hide()
+					$("#img1").hide()
+					$("#img2").hide()
+					
+
+				}
+
+	}
+	)
+	$("#para2").click(function()
+	{
+		var c=$("#para2").text()// nepal
+		if(c=="+")
+			{
+
+				$("#para2").text("-")
+				$("#img2").toggle();
+				$("#img1").hide()
+				$("#img").hide()
+				$("#para1").text("+")
+					$("#para1").text("+")
+			
+			}
+				else
+				{
+					$("#para2").text("+")	
+					$("#img2").toggle();
+					$("#img").hide()
+					$("#img1").hide()
+					$("#img2").hide()
+					
+
+				}
+
+	}
+	)
+
+
+
+	$("#bbb").click(function(){
+		$("#print").toggle(5000);
+	})
+</script>
